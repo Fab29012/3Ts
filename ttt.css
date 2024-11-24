@@ -1,0 +1,512 @@
+body {
+    background-color: #DCCDD1;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: auto;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    height: 120px; 
+}
+
+h1, h2, h3 {
+    font-family: "Fondamento", cursive;
+}
+
+h4, h5, h6, p {
+    font-family: "Solway", serif;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+.leftside h1 {
+    margin: 30px;
+}
+
+.leftside img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.nav {
+    margin-top: 50px;
+    gap: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center; 
+    z-index: 2;
+}
+
+.menu {
+    overflow: hidden;
+    max-height: 25px;
+    transition: max-height 0s;
+}
+
+.nav .menu:hover {
+    max-height: 200px;
+    cursor: pointer;
+    overflow: visible;
+} 
+
+.nav ul {
+    margin: 0;
+    padding: 8px;
+    list-style: none;
+    text-align: left;  
+}
+
+.nav li {
+    margin-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav h3 {
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav li {
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: background-color 1s ease, color 1s ease; 
+    border: 0.5px dashed black;
+    border-radius: 10px;
+}
+
+.nav li a:hover {
+   color: white; 
+}
+
+.nav li:hover {
+    background-color: #40242B;
+}
+
+.nav h3 a {
+    color: black;
+}
+
+.containerone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.containerone img:first-child {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: pulse 4s infinite;
+}
+
+.containerone > p + img {
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    margin-left: 75%;
+    margin-top: 57%;
+    transform: rotate(-18deg);
+}
+
+.containerone h4, p {
+    position: absolute;
+}
+
+.containerone h4 {
+    margin-left: 230px;
+    margin-bottom: 250px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.containerone p {
+    margin-top: 60px;
+    margin-left: 330px;
+    padding-left: 300px;
+    padding-right: 230px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.containertwo, .containerthree, .containerfour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.two h2 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -150px;
+    transform: rotate(-90deg); /* Rotates the text */
+    transform-origin: left left; /* Adjusts rotation anchor point */
+    font-size: 50px;
+    z-index: 1;
+    color: whitesmoke;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 2px;
+    
+}
+
+.three h2 {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -90px;
+    transform: rotate(-90deg); /* Rotates the text */
+    transform-origin: left left; /* Adjusts rotation anchor point */
+    font-size: 50px;
+    z-index: 2;
+    color: whitesmoke;
+    background-color: #DCCDD1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 2px;
+
+}
+
+.containertwo div {
+    background: rgba(255, 255, 255, 0.592);
+    width: 300px;
+    height: 450px;
+    margin: 10px; 
+    border-radius: 40px;
+    backdrop-filter: blur(10px); 
+    z-index: 1;
+}
+.containertwo div h5 {
+    padding: 5px;
+    text-align: center;
+    color: #7A6785;
+    font-size: 15px;
+}
+
+.containertwo h5 + h6 {
+    font-size: 12px;
+}
+.containertwo div h6 {
+    margin: 0;
+    padding: 10px;
+}
+
+.containertwo div h6:hover {
+    background-color: #7a678591;
+    font-size: 15px;
+    border-radius: 40px;
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.containertwo img {
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    margin-right: 71%;
+    margin-top: 23%;
+    transform: rotate(-50deg);
+}
+.containerthree {
+    background: rgba(255, 255, 255, 0.468);
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-top: 2px solid whitesmoke;
+    animation: pulse 6s infinite;
+}
+/*
+@keyframes pulse {
+    0%, 100% {
+        border-top: 5px solid #ff6347;
+    }
+    50% {
+        border-top: 10px solid #ff4500; /* Thicker and brighter at peak 
+    }
+} */
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 -5px 10px 0px whitesmoke; /* Subtle shadow on top */
+    }
+    50% {
+        box-shadow: 0 -10px 20px 5px whitesmoke; /* Larger glow at peak */
+    }
+}
+
+.containerthree div + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+    gap: 0px;
+}
+
+.containerthree div + div h5 {
+    font-size: 28px;
+    padding-bottom: 30px;
+    margin: 0;
+    margin-left: 320px;
+    margin-right: 100px;
+    text-align: center;
+    color: black; /* Title text color */
+    text-shadow: 0 0 10px #dbb5bf, /* First glow */
+                 0 0 20px #dbb5bf, /* Slightly larger glow */
+                 0 0 30px #dbb5bf, /* More intense inner glow */
+                 0 0 40px #dbb5bf;
+}
+
+.containerthree div + div h6 {
+    margin: 0;
+    margin-left: 320px;
+    margin-right: 100px;
+    font-size: 14px;
+}
+
+.containerthree img {
+    margin: 0;
+    margin-left: 300px;
+    
+}
+.containerthree img:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.four h2 {
+    position: absolute;
+    margin-top: -75px;
+    margin-left: -220px;
+    transform: rotate(-90deg); /* Rotates the text */
+    transform-origin: left left; /* Adjusts rotation anchor point */
+    font-size: 50px;
+    z-index: 2;
+    color: whitesmoke;
+    background-color: #DCCDD1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 2px;
+}
+
+.containerfour :first-child ~ div {
+    width: 400px;
+    height: 300px;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    background-color: white;
+    margin-bottom: 100px;
+    transition: transform 0.3s ease;
+}
+
+.containerfour :first-child ~ div:hover {
+        transform: scale(1.4); /* Magnify the content by 10% on hover */
+}
+
+.containerfour :first-child + div {
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center;
+}
+
+.containerfour img {
+    width: 120px;
+    height: 300px;
+}
+
+.containerfour .four + div img {
+    width: 400px;
+    height: 300px;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+.containerfour h5 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.containerfour h6 {
+    text-align: left;
+    font-size: 11px;
+    margin: 8px;
+}
+
+footer {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        height: 120px; 
+      
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+#aboutpage .information {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0;
+}
+
+#aboutpage .information div {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+#aboutpage .information img {
+    width: 120px;
+    height: 120px;
+    
+}
+
+#aboutpage .information :first-child img {
+    position: absolute;
+    margin-top: 8px;
+    left: 610px;
+}
+
+#aboutpage .information :last-child img {
+    position: absolute;
+    right: 20px;
+}
+
+#aboutpage .information h5 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#aboutpage .information h6 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+#aboutpage .information h6:hover {
+    transform: scale(1.25);
+    background-color:#dccdd17a;
+}
+
+#aboutpage footer {
+    margin-top: 40px;
+}
+
+#tbr .carousel-container {
+    display: flex; /* Align carousels in a row */
+    justify-content: space-evenly; /* Space them evenly */
+    align-items: center; /* Vertically align carousels */
+    gap: 20px; /* Add space between the carousels */
+    margin-top: 60px;
+}
+
+#tbr .carousel {
+    width: 420px; /* Adjust carousel width */
+    position: relative; /* Required for arrow positioning */
+    overflow: hidden; /* Hide overflowing slides */
+    border: 2px solid white; /* Optional: Add a border */
+    border-radius: 10px; /* Optional: Rounded corners */
+    animation: pulse 4s infinite;
+}
+
+#tbr .carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#tbr .slide {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#tbr button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #7A6785;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+#tbr button:hover {
+    background-color: #40242B;
+}
+
+#tbr button.prev {
+    left: 10px;
+}
+
+#tbr button.next {
+    right: 10px;
+}
+
+
+#tbr .carousel img {
+    margin-top: 20px;
+    margin-left: 115px;
+    width: 200px;
+    height: 350px;
+}
+
+#tbr footer {
+    margin-top: 200px;
+}
+
+#tbr h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        flex-direction: column; /* Stack carousels vertically */
+        gap: 40px;
+    }
+}
