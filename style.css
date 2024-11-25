@@ -131,18 +131,16 @@ h4, h5, h6, p {
     transform: rotate(-18deg);
 }
 
-.containerone h4, p {
-    position: absolute;
-}
-
 .containerone h4 {
-    margin-left: 230px;
+    display: block;
+    /*margin-left: 230px;*/
     margin-bottom: 250px;
     font-size: 40px;
     text-align: center;
 }
 
 .containerone p {
+    display: block;
     margin-top: 60px;
     margin-left: 330px;
     padding-left: 300px;
