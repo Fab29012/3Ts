@@ -131,7 +131,7 @@ h4, h5, h6, p {
     transform: rotate(-18deg);
 }
 
-.containerone h4, p {
+.containerone h4 {
     position: absolute;
 }
 
