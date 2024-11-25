@@ -143,6 +143,7 @@ h4, h5, h6, p {
 }
 
 .containerone p {
+    display: block;
     margin-top: 60px;
     margin-left: 330px;
     padding-left: 300px;
@@ -210,6 +211,11 @@ h4, h5, h6, p {
 .containertwo div h6 {
     margin: 0;
     padding: 10px;
+}
+/*This is a test since my ps are being displayed on top of each other*/
+.containertwo div p {
+    display: block;
+    margin-bottom: 10px;
 }
 
 .containertwo div h6:hover {
