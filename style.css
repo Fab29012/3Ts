@@ -121,6 +121,7 @@ h4, h5, h6, p {
     height: 300px;
     border-radius: 50%;
     animation: pulse 4s infinite;
+    margin-left: 20px;
 }
 
 .containerone > p + img {
@@ -133,9 +134,7 @@ h4, h5, h6, p {
 }
 
 .containerone h4 {
-    display: block; 
-    /*margin-left: 230px; this might not be needed */
-    margin-bottom: 250px;
+    position: absolute;
     font-size: 40px;
     text-align: center;
 }
@@ -143,9 +142,8 @@ h4, h5, h6, p {
 .containerone p {
     position: absolute;
     margin-top: 60px;
-    /*margin-left: 330px;*/
-    /*padding-left: 300px;*/
-    /*padding-right: 230px;*/
+    padding-left: 300px;
+    padding-right: 230px;
     font-size: 15px;
     text-align: left;
 }
