@@ -280,7 +280,7 @@ h4, h5, h6, p {
                  0 0 40px #dbb5bf;
 }
 
-.containerthree div + div h6 {
+.containerthree div + div p {
     margin: 0;
     margin-left: 320px;
     margin-right: 100px;
@@ -355,7 +355,7 @@ h4, h5, h6, p {
     font-size: 15px;
 }
 
-.containerfour h6 {
+.containerfour p {
     text-align: left;
     font-size: 11px;
     margin: 8px;
