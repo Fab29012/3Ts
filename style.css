@@ -131,7 +131,7 @@ h4, h5, h6, p {
     transform: rotate(-18deg);
 }
 
-.containerone h4 {
+.containerone h4, p {
     position: absolute;
 }
 
@@ -215,6 +215,7 @@ h4, h5, h6, p {
 .containertwo div p {
     display: block;
     margin-bottom: 10px;
+    font-size: 10px;
 }
 
 .containertwo div h6:hover {
