@@ -140,7 +140,6 @@ h4, h5, h6, p {
 }
 
 .containerone p {
-    display: block;
     margin-top: 60px;
     margin-left: 330px;
     padding-left: 300px;
