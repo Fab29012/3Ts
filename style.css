@@ -121,9 +121,11 @@ h4, h5, h6, p {
     height: 300px;
     border-radius: 50%;
     animation: pulse 4s infinite;
-    margin-left: 20px;
+    margin-left: 15px;
 }
-
+.containerone img:first-child + img {
+    margin-left: 25px;
+}
 .containerone > p + img {
     position: absolute;
     width: 120px;
@@ -135,13 +137,13 @@ h4, h5, h6, p {
 
 .containerone h4 {
     position: absolute;
+    margin-left: 
     font-size: 40px;
     text-align: center;
 }
 
 .containerone p {
     position: absolute;
-    margin-top: 60px;
     padding-left: 300px;
     padding-right: 230px;
     font-size: 15px;
