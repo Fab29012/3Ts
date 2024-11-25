@@ -196,6 +196,7 @@ h4, h5, h6, p {
     width: 320px;
     height: 450px;
     /*margin: 10px; */
+    margin-left: 20px;
     border-radius: 40px;
     backdrop-filter: blur(10px); 
     z-index: 1;
@@ -221,7 +222,7 @@ h4, h5, h6, p {
     font-size: 12px;
 }
 
-.containertwo div h6:hover {
+.containertwo div h6:hover, p:hover {
     background-color: #7a678591;
     font-size: 15px;
     border-radius: 40px;
@@ -237,6 +238,9 @@ h4, h5, h6, p {
     margin-top: 23%;
     transform: rotate(-50deg);
 }
+
+/*This is the end of container 2 and the start of the monthly read*/
+
 .containerthree {
     background: rgba(255, 255, 255, 0.468);
     width: 100%;
