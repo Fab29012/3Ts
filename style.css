@@ -195,7 +195,7 @@ h4, h5, h6, p {
     background: rgba(255, 255, 255, 0.592);
     width: 320px;
     height: 450px;
-    margin: 10px; 
+    /*margin: 10px; */
     border-radius: 40px;
     backdrop-filter: blur(10px); 
     z-index: 1;
