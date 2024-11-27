@@ -175,6 +175,7 @@ header {
     height: 440px;
     margin-left: 0;
     margin-right: 0;
+    padding: 0;
     border-radius: 40px;
     backdrop-filter: blur(10px); 
     z-index: 1;
