@@ -172,8 +172,8 @@ header {
 .containertwo div {
     background: rgba(255, 255, 255, 0.592);
     width: 340px;
-    height: 450px;
-    margin-left: 20px;
+    height: 400px;
+    margin-left: 100px;
     border-radius: 40px;
     backdrop-filter: blur(10px); 
     z-index: 1;
@@ -197,7 +197,7 @@ header {
     display: block;
     padding: 0px 7px 0px 7px;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .containertwo div h6:hover {
@@ -210,10 +210,11 @@ header {
 
 .containertwo div p:hover {
     background-color: #7a678591;
-    font-size: 13.5px;
+    font-size: 14px;
     border-radius: 40px;
     backdrop-filter: blur(5px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 8px;
 }
 
 .containertwo img {
