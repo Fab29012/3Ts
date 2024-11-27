@@ -1,3 +1,4 @@
+/*styles to be applied to the whole website*/
 body {
     background-color: #DCCDD1;
     margin: 0;
@@ -5,6 +6,14 @@ body {
     position: relative;
     height: auto;
 }
+h1, h2, h3 {
+    font-family: "Fondamento", cursive;
+}
+h4, h5, h6, p {
+    font-family: "Solway", serif;
+}
+
+/*Styles for the header*/
 
 header {
     background-color: white;
@@ -14,14 +23,6 @@ header {
     gap: 0;
     width: 100%;
     height: 120px; 
-}
-
-h1, h2, h3 {
-    font-family: "Fondamento", cursive;
-}
-
-h4, h5, h6, p {
-    font-family: "Solway", serif;
 }
 
 .leftside {
@@ -73,10 +74,6 @@ h4, h5, h6, p {
     text-align: left;  
 }
 
-.nav li {
-    margin-bottom: 20px;
-}
-
 .nav a {
     text-decoration: none;
     color: black;
@@ -88,7 +85,7 @@ h4, h5, h6, p {
 }
 
 .nav li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 5px;
     transition: background-color 1s ease, color 1s ease; 
     border: 0.5px dashed black;
@@ -106,9 +103,9 @@ h4, h5, h6, p {
 .nav h3 a {
     color: black;
 }
-/*This is where container one begins*/
 
-.containerone {
+/*This concerns all containers*/
+.containerone, .containertwo, .containerthree, .containerfour {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -116,6 +113,8 @@ h4, h5, h6, p {
     margin-top: 100px;
 }
 
+/*This is where container one begins*/
+/*This is profile photo*/
 .containerone img:first-child {
     width: 300px;
     height: 300px;
@@ -123,16 +122,10 @@ h4, h5, h6, p {
     animation: pulse 4s infinite;
     margin-left: 15px;
 }
+
+/*This is the cloud image*/
 .containerone img:first-child + img {
     margin-left: 25px;
-}
-.containerone > p + img {
-    position: absolute;
-    width: 120px;
-    height: 300px;
-    margin-left: 75%;
-    margin-top: 57%;
-    transform: rotate(-18deg);
 }
 
 .containerone h4 {
@@ -140,7 +133,7 @@ h4, h5, h6, p {
     font-size: 40px;
     text-align: center;
     margin-top: -200px;
-    margin-left: 190px;
+    margin-left: 240px;
 }
 
 .containerone p {
@@ -152,16 +145,16 @@ h4, h5, h6, p {
     margin-left: 140px;
     margin-top: 40px;
 }
-/*This is a break from container one*/
-
-.containertwo, .containerthree, .containerfour {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 100px;
+.containerone > p + img {
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    margin-left: 75%;
+    margin-top: 57%;
+    transform: rotate(-18deg);
 }
 
+/*This is where container two begins*/
 .two h2 {
     position: absolute;
     margin-top: 300px;
@@ -170,61 +163,46 @@ h4, h5, h6, p {
     transform-origin: left left; /* Adjusts rotation anchor point */
     font-size: 50px;
     z-index: 1;
-    color: whitesmoke;
+    color: #40242B;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     padding: 2px;
     
 }
 
-.three h2 {
-    position: absolute;
-    margin-top: -25px;
-    margin-left: -90px;
-    transform: rotate(-90deg); /* Rotates the text */
-    transform-origin: left left; /* Adjusts rotation anchor point */
-    font-size: 50px;
-    z-index: 2;
-    color: whitesmoke;
-    background-color: #DCCDD1;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    padding: 2px;
-
-}
-
 .containertwo div {
     background: rgba(255, 255, 255, 0.592);
-    width: 320px;
+    width: 340px;
     height: 450px;
-    /*margin: 10px; */
     margin-left: 20px;
     border-radius: 40px;
     backdrop-filter: blur(10px); 
     z-index: 1;
 }
-.containertwo div h5 {
+
+.containertwo h5 {
     padding: 5px;
     text-align: center;
     color: #7A6785;
     font-size: 15px;
 }
 
-.containertwo h5 + h6 {
+.containertwo h6 {
     font-size: 12px;
-}
-.containertwo div h6 {
     margin: 0;
     padding: 10px;
 }
-/*This is a test since my ps are being displayed on top of each other*/
+
+/*This is a test since my ps are being displayed on top of each other*//*update this did work, keep that in mind*/
 .containertwo div p {
     display: block;
+    padding: 0px 7px 0px 7px;
     margin-bottom: 10px;
     font-size: 12px;
 }
 
 .containertwo div h6:hover {
     background-color: #7a678591;
-    font-size: 15px;
+    font-size: 13.5px;
     border-radius: 40px;
     backdrop-filter: blur(5px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
@@ -232,8 +210,8 @@ h4, h5, h6, p {
 
 .containertwo div p:hover {
     background-color: #7a678591;
-    font-size: 20px;
-    border-radius: 25px;
+    font-size: 13.5px;
+    border-radius: 40px;
     backdrop-filter: blur(5px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
@@ -248,6 +226,19 @@ h4, h5, h6, p {
 }
 
 /*This is the end of container 2 and the start of the monthly read*/
+.three h2 {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -90px;
+    transform: rotate(-90deg); /* Rotates the text */
+    transform-origin: left left; /* Adjusts rotation anchor point */
+    font-size: 50px;
+    z-index: 2;
+    color: #40242B;
+    background-color: #DCCDD1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 2px;
+}
 
 .containerthree {
     background: rgba(255, 255, 255, 0.468);
