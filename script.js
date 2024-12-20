@@ -39,3 +39,26 @@ function prevSlide(carouselId) {
 document.querySelectorAll('.carousel-content').forEach(carousel => {
     showSlide(carousel.id, 0);
 });
+
+// This is the carousel on index.html
+const carousel = document.querySelector('.carousel');
+const cards = document.querySelectorAll('.card');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+    const offset = -currentIndex * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : cards.length - 1;
+    updateCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex < cards.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+});
