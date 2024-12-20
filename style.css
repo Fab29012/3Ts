@@ -153,7 +153,7 @@ header {
     transform: rotate(-18deg);
 }
 
-/*This is where container two begins*/
+/*This is where container two beginsT*/
 .two h2 {
     position: absolute;
     margin-top: 300px;
@@ -167,7 +167,7 @@ header {
     padding: 2px;
     
 }
-
+/*This is a try for a carousel concerning container two
 .containertwo div {
     background: rgba(255, 255, 255, 0.592);
     width: 340px;
@@ -200,7 +200,9 @@ header {
     backdrop-filter: blur(5px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
+*/
 /*This is a test since my ps are being displayed on top of each other*//*update this did work, keep that in mind*/
+/*This is also for the carousel try
 .containertwo div p {
     display: block;
     padding: 0px 7px 0px 7px;
@@ -216,6 +218,52 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     padding: 8px;
 }
+*/
+
+/*This will be containertwo's carousel's css*/
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-btn.prev-btn {
+    left: 10px;
+}
+
+.carousel-btn.next-btn {
+    right: 10px;
+}
+
 
 .containertwo img {
     position: absolute;
