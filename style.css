@@ -14,7 +14,6 @@ h4, h5, h6, p {
 }
 
 /*Styles for the header*/
-
 header {
     background-color: white;
     display: flex;
@@ -172,7 +171,7 @@ header {
 .containertwo div {
     background: rgba(255, 255, 255, 0.592);
     width: 340px;
-    height: 440px;
+    height: 455px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -194,20 +193,19 @@ header {
     padding: 10px;
 }
 
-/*This is a test since my ps are being displayed on top of each other*//*update this did work, keep that in mind*/
-.containertwo div p {
-    display: block;
-    padding: 0px 7px 0px 7px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
 .containertwo div h6:hover {
     background-color: #7a678591;
     font-size: 13.5px;
     border-radius: 40px;
     backdrop-filter: blur(5px); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+/*This is a test since my ps are being displayed on top of each other*//*update this did work, keep that in mind*/
+.containertwo div p {
+    display: block;
+    padding: 0px 7px 0px 7px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .containertwo div p:hover {
