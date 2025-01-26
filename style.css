@@ -479,7 +479,7 @@ footer {
     display: flex; /* Align carousels in a row */
     justify-content: space-evenly; /* Space them evenly */
     align-items: center; /* Vertically align carousels */
-    gap: 20px; /* Add space between the carousels */
+    gap: 50px; /* Add space between the carousels */
     margin-top: 60px;
 }
 
@@ -528,7 +528,7 @@ footer {
 
 #tbr .carousel img {
     margin-top: 20px;
-    margin-left: 115px;
+    margin-left: 40px;
     width: 200px;
     height: 350px;
 }
