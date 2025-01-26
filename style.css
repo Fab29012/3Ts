@@ -156,6 +156,7 @@ header {
 /*This is where container two beginsT*/
 .two h2 {
     position: absolute;
+    margin-top: 500px;
     margin-left: -150px;
     transform: rotate(-90deg); /* Rotates the text */
     transform-origin: left left; /* Adjusts rotation anchor point */
