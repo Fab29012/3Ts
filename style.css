@@ -475,7 +475,7 @@ footer {
     margin-top: 40px;
 }
 
-#tbr .carousel-container {
+#tbr .carousel-containertbr {
     display: flex; /* Align carousels in a row */
     justify-content: space-evenly; /* Space them evenly */
     align-items: center; /* Vertically align carousels */
@@ -483,7 +483,7 @@ footer {
     margin-top: 60px;
 }
 
-#tbr .carousel {
+#tbr .carouseltbr {
     width: 420px; /* Adjust carousel width */
     position: relative; /* Required for arrow positioning */
     overflow: hidden; /* Hide overflowing slides */
@@ -526,7 +526,7 @@ footer {
 }
 
 
-#tbr .carousel img {
+#tbr .carouseltbr img {
     margin-top: 20px;
     margin-left: 40px;
     width: 200px;
