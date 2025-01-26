@@ -225,7 +225,7 @@ header {
     position: relative;
     max-width: 600px;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 150px;
     overflow: hidden; /* Ensures only one card is visible at a time */
 }
 
@@ -254,10 +254,9 @@ header {
 .card h6 {
     font-size: 19px;
 }
-/* Hide the radio buttons */
+/* Hide the radio buttons 
 input[type="radio"] {
-    display: none;
-}
+}*/
 
 /* Transform the carousel based on the selected radio button */
 #card1:checked ~ .carousel {
@@ -283,14 +282,14 @@ input[type="radio"] {
 .controls label {
     width: 25px;
     height: 25px;
-    background: #40242B;
+    background: #b00c35;
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 input[type="radio"]:checked + label {
-    background: #333;
+    background: #b30c0c;
 }
 
 .containertwo img {
