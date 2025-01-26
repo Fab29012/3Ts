@@ -156,7 +156,7 @@ header {
 /*This is where container two beginsT*/
 .two h2 {
     position: absolute;
-    margin-top: 300px;
+    margin-top: 340px;
     margin-left: -150px;
     transform: rotate(-90deg); /* Rotates the text */
     transform-origin: left left; /* Adjusts rotation anchor point */
@@ -223,47 +223,75 @@ header {
 /*This will be containertwo's carousel's css*/
 .carousel-container {
     position: relative;
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
-    overflow: hidden;
+    margin-top: 300px;
+    overflow: hidden; /* Ensures only one card is visible at a time */
 }
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Width accommodates all cards */
 }
 
 .card {
-    min-width: 100%;
-    padding: 20px;
+    flex: 0 0 100%; /* Each card takes full width of the container */
+    padding: 15px;
     box-sizing: border-box;
     background: #f9f9f9;
-    border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card h5 {
+    font-size: 23px;
+}
+.card h6 {
+    font-size: 19px;
+}
+/* Hide the radio buttons */
+input[type="radio"] {
+    display: none;
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
+/* Transform the carousel based on the selected radio button */
+#card1:checked ~ .carousel {
+    transform: translateX(0%);
+}
+
+#card2:checked ~ .carousel {
+    transform: translateX(-100%);
+}
+
+#card3:checked ~ .carousel {
+    transform: translateX(-200%);
+}
+
+/* Navigation controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.controls label {
+    width: 25px;
+    height: 25px;
+    background: #40242B;
     border-radius: 50%;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-.carousel-btn.prev-btn {
-    left: 10px;
+input[type="radio"]:checked + label {
+    background: #333;
 }
-
-.carousel-btn.next-btn {
-    right: 10px;
-}
-
 
 .containertwo img {
     position: absolute;
