@@ -156,7 +156,7 @@ header {
 /*This is where container two beginsT*/
 .two h2 {
     position: absolute;
-    margin-top: 340px;
+    margin-top: 130px;
     margin-left: -150px;
     transform: rotate(-90deg); /* Rotates the text */
     transform-origin: left left; /* Adjusts rotation anchor point */
@@ -167,58 +167,6 @@ header {
     padding: 2px;
     
 }
-/*This is a try for a carousel concerning container two
-.containertwo div {
-    background: rgba(255, 255, 255, 0.592);
-    width: 340px;
-    height: 455px;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    border-radius: 40px;
-    backdrop-filter: blur(10px); 
-    z-index: 1;
-}
-
-.containertwo h5 {
-    padding: 5px;
-    text-align: center;
-    color: #7A6785;
-    font-size: 15px;
-}
-
-.containertwo h6 {
-    font-size: 12px;
-    margin: 0;
-    padding: 10px;
-}
-
-.containertwo div h6:hover {
-    background-color: #7a678591;
-    font-size: 13.5px;
-    border-radius: 40px;
-    backdrop-filter: blur(5px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-}
-*/
-/*This is a test since my ps are being displayed on top of each other*//*update this did work, keep that in mind*/
-/*This is also for the carousel try
-.containertwo div p {
-    display: block;
-    padding: 0px 7px 0px 7px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.containertwo div p:hover {
-    background-color: #7a678591;
-    font-size: 14px;
-    border-radius: 40px;
-    backdrop-filter: blur(5px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    padding: 8px;
-}
-*/
 
 /*This will be containertwo's carousel's css*/
 .carousel-container {
