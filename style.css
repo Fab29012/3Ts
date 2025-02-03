@@ -393,17 +393,6 @@ footer {
     
 }
 
-/*#aboutpage .information :first-child img {
-    position: absolute;
-    margin-top: 55px;
-    margin-right: 90px;
-}
-
-#aboutpage .information :last-child img {
-    position: absolute;
-    margin-top: 20px;
-}*/
-
 #aboutpage .information h5 {
     text-align: center;
     font-size: 30px;
@@ -500,5 +489,9 @@ footer {
     .carousel-container {
         flex-direction: column; /* Stack carousels vertically */
         gap: 40px;
+    }
+
+    #tbr .carousel-containertbr {
+        flex-direction: column;
     }
 }
