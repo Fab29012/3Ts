@@ -68,6 +68,7 @@ nav h3 {
 .hamburger {
     display: none;
     flex-direction: column;
+    align-items: flex-end;
     cursor: pointer;
     gap: 5px;
     z-index: 10;
@@ -83,7 +84,7 @@ nav h3 {
 
 @media (max-width: 768px) {
     .topside h1 {
-        font-size: 25px !important;
+        display: none;
     }
     .hamburger {
         display: flex;
@@ -104,10 +105,34 @@ nav h3 {
     .mobilemenu.active {
         display: flex !important;
     }
+    .containerone, .containertwo, .containerthree, .containerfour {
+        flex-direction: column !important;
+    }
+
+    h2 {
+        transform: rotate(0deg) !important;
+    }
+
+    .wheel {
+        display: none;
+    }
+
+    .introduction {
+        width: 90vw !important; /* Takes up 90% of screen width */
+        max-width: 90% !important; /* Won’t exceed screen width */
+        height: auto; 
+    }
 
     .carousel-container {
         flex-direction: column; /* Stack carousels vertically*/
-        gap: 40px;
+        margin-top: 20px !important;
+        margin-bottom: 200px;
+        max-width: 450px !important;
+    }
+
+    .containerthree {
+        border-top-left-radius: 70px !important;
+         border-top-right-radius: 70px !important;
     }
 
     #tbr .carousel-containertbr {
@@ -200,7 +225,7 @@ nav h3 {
 
 /*This will be containertwo's carousel's css*/
 .carousel-container {
-    max-width: 600px;
+    max-width: 500px;
     margin-top: 150px;
     overflow: hidden; /* Ensures only one card is visible at a time */
 }
@@ -287,7 +312,7 @@ input[type="radio"]:checked + label {
 .containerthree {
     background: rgba(255, 255, 255, 0.468);
     width: 100%;
-    height: 600px;
+    height: auto;
     z-index: 1;
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
