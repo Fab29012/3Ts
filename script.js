@@ -40,6 +40,11 @@ document.querySelectorAll('.carousel-content').forEach(carousel => {
     showSlide(carousel.id, 0);
 });
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".mobilemenu");
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobilemenu");
 
+    hamburger.addEventListener("click", function() {
+        mobileMenu.classList.toggle("active");
+    });
+});

@@ -42,7 +42,7 @@ header {
     
 }
 
-nav {
+.mobilemenu {
     gap: 35px;
     display: flex;
     flex-direction: row;
@@ -51,6 +51,7 @@ nav {
     text-align: center; 
     z-index: 2;
     margin-top: -20px;
+    list-style: none;
 }
 
 nav a {
@@ -64,13 +65,54 @@ nav h3 {
     padding: 0; 
 }
 
-.mobilemenu {
-    gap: 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 10;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: black;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .topside h1 {
+        font-size: 25px !important;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    .mobilemenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        background: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobilemenu.active {
+        display: flex !important;
+    }
+
+    .carousel-container {
+        flex-direction: column; /* Stack carousels vertically*/
+        gap: 40px;
+    }
+
+    #tbr .carousel-containertbr {
+        flex-direction: column !important;
+    }
 }
 
 /*This concerns all containers*/
@@ -485,13 +527,5 @@ footer {
     font-size: 25px;
 }
 
-@media (max-width: 768px) {
-    .carousel-container {
-        flex-direction: column; /* Stack carousels vertically */
-        gap: 40px;
-    }
 
-    #tbr .carousel-containertbr {
-        flex-direction: column;
-    }
-}
+
