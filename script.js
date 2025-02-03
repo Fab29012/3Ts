@@ -39,3 +39,7 @@ function prevSlide(carouselId) {
 document.querySelectorAll('.carousel-content').forEach(carousel => {
     showSlide(carousel.id, 0);
 });
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".mobilemenu");
+

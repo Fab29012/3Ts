@@ -42,7 +42,7 @@ header {
     
 }
 
-.nav {
+nav {
     gap: 35px;
     display: flex;
     flex-direction: row;
@@ -53,15 +53,24 @@ header {
     margin-top: -20px;
 }
 
-.nav a {
+nav a {
     text-decoration: none;
     color: black;
 }
 
-.nav h3 {
+nav h3 {
     font-weight: normal;
     margin: 0; 
     padding: 0; 
+}
+
+.mobilemenu {
+    gap: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
 }
 
 /*This concerns all containers*/
@@ -358,39 +367,42 @@ footer {
     height: 10px;
 }
 
+
 #aboutpage .information {
     display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 0;
 }
 
 #aboutpage .information div {
-    width: 600px;
+    width: 900px;
     height: 600px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.43);
     margin-top: 40px;
     margin-bottom: 40px;
     z-index: 1;
+    border-radius: 60px;
+    padding: 0 30px 0 30px;
 }
 
 #aboutpage .information img {
+    margin-left: 380px;
     width: 120px;
     height: 120px;
     
 }
 
-#aboutpage .information :first-child img {
+/*#aboutpage .information :first-child img {
     position: absolute;
-    margin-top: 8px;
-    left: 610px;
+    margin-top: 55px;
+    margin-right: 90px;
 }
 
 #aboutpage .information :last-child img {
     position: absolute;
-    right: 20px;
-}
+    margin-top: 20px;
+}*/
 
 #aboutpage .information h5 {
     text-align: center;
