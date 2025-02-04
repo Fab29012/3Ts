@@ -81,11 +81,6 @@ nav h3 {
         display: none;
     }
 
-    .introduction {
-        width: 90vw !important; /* Takes up 90% of screen width */
-        max-width: 100% !important; /* Won’t exceed screen width */
-        height: auto; 
-    }
 
     .carousel-container {
         flex-direction: column; /* Stack carousels vertically*/
