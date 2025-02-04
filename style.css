@@ -65,7 +65,7 @@ nav h3 {
     padding: 0; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
 
     .containerone, .containertwo, .containerthree, .containerfour {
@@ -81,6 +81,9 @@ nav h3 {
         display: none;
     }
 
+    .introduction {
+        width: auto;
+    }
 
     .carousel-container {
         flex-direction: column; /* Stack carousels vertically*/
