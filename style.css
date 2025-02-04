@@ -3,8 +3,8 @@ body {
     background-color: #DCCDD1;
     margin: 0;
     padding: 0;
-    position: relative;
-    height: auto;
+    /*position: relative;
+    height: auto;*/
 }
 h1, h2, h3 {
     font-family: "Fondamento", cursive;
