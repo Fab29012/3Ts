@@ -64,9 +64,8 @@ nav h3 {
     margin: 0; 
     padding: 0; 
 }
-
+/*
 @media (max-width: 480px) {
-
 
     .containerone, .containertwo, .containerthree, .containerfour {
         width: 480px;
@@ -82,12 +81,8 @@ nav h3 {
         display: none;
     }
 
-    .introduction {
-        width: auto;
-    }
-
     .carousel-container {
-        flex-direction: column; /* Stack carousels vertically*/
+        flex-direction: column !important; 
         margin-top: 20px !important;
         margin-bottom: 100px;
         max-width: 350px !important;
@@ -101,7 +96,7 @@ nav h3 {
     #tbr .carousel-containertbr {
         flex-direction: column !important;
     }
-}
+}*/
 
 /*This concerns all containers*/
 .containerone {
