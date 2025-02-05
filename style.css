@@ -394,7 +394,7 @@ footer {
         width: 80px;
         height: 80px;
         display: flex;
-        justify-content: flex-start !important;
+        justify-content: flex-end !important;
     }
 
     .profile {
