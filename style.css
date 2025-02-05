@@ -382,7 +382,7 @@ footer {
         height: 100px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between !important;
+        justify-content: space-evenly !important;
         align-items: center !important;
     }
 
@@ -441,6 +441,7 @@ footer {
 
     .introduction {
         background-image: none !important;
+        margin-top: -200px !important;
         width: 90vw !important; /* Takes up 90% of screen width */
         max-width: 90% !important; /* Won’t exceed screen width */
         height: auto; 
