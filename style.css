@@ -379,7 +379,11 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        height: 150px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end !important;
+        align-items: center !important;
     }
 
     .topside h1 {
@@ -387,26 +391,27 @@ footer {
     }
     
     .topside img {
-        margin-top: 50px;
+        margin: 10px;
         width: 80px;
         height: 80px;
     }
 
     .profile {
-        width: 150px;
-        height: 150px;
-        float: right;
+        width: 170px;
+        height: 170px;
+        float: right !important;
         margin: 10px;
     }
     
     .hamburger {
         display: flex;
+
     }
 
     .mobilemenu {
         display: none;
         flex-direction: column;
-        position: absolute;
+        justify-content: center;
         top: 30px;
         left: 0;
         width: 100%;
@@ -419,6 +424,7 @@ footer {
         display: flex !important;
     }
     h2 {
+        font-size: 25px;
         transform: rotate(0deg) !important;
     }
     .containerone, .containertwo, .containerthree, .containerfour {
