@@ -379,13 +379,10 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        height: 140px;
+        height: 100px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between !important;
         align-items: center !important;
-        margin: 0 !important;
-        gap: 0 !important;
     }
 
     .topside h1 {
@@ -396,6 +393,8 @@ footer {
         margin: 10px;
         width: 80px;
         height: 80px;
+        display: flex;
+        justify-content: flex-start !important;
     }
 
     .profile {
@@ -420,7 +419,7 @@ footer {
         position: absolute;
         top: 70px;
         left: 0;
-        width: 100%;
+        width: 90%;
         background: white;
         text-align: center;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
