@@ -384,7 +384,7 @@ footer {
         flex-direction: row;
         justify-content: space-between !important;
         align-items: center !important;
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     .topside h1 {
