@@ -382,7 +382,7 @@ footer {
         height: 100px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly !important;
+        justify-content: center !important;
         align-items: center !important;
     }
 
