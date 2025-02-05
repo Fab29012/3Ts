@@ -382,8 +382,9 @@ footer {
         height: 100px;
         display: flex;
         flex-direction: row;
-        justify-content: center !important;
+        justify-content: space-between !important;
         align-items: center !important;
+        margin-left: 0;
     }
 
     .topside h1 {
