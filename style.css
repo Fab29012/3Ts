@@ -308,7 +308,7 @@ input[type="radio"]:checked + label {
     border-top-left-radius: 15%;
     border-bottom-right-radius: 15%;
     background-color: transparent;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     transition: transform 0.3s ease;
 }
 
@@ -479,8 +479,22 @@ footer {
     .description {
         text-align: center;
         margin: 0 25px !important;
+        max-width: 350px !important;
+        height: auto;
+    }
+
+    .tea {
+        margin-top: -100px;
     }
     
+    .containerfour :first-child ~ div {
+        width: 350px;
+        margin-bottom: 40px !important;
+    }
+
+    .containerfour p {
+        font-size: 12px;
+    }
 }
 
 
