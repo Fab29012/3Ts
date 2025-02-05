@@ -64,40 +64,7 @@ nav h3 {
     margin: 0; 
     padding: 0; 
 }
-/*
-@media (max-width: 480px) {
-
-    .containerone, .containertwo, .containerthree, .containerfour {
-        width: 480px;
-        flex-direction: column !important;
-    }
-
-    h2 {
-        transform: rotate(0deg) !important;
-        font-size: 30px !important;
-    }
-
-    .wheel {
-        display: none;
-    }
-
-    .carousel-container {
-        flex-direction: column !important; 
-        margin-top: 20px !important;
-        margin-bottom: 100px;
-        max-width: 350px !important;
-    }
-
-    .containerthree {
-        border-top-left-radius: 70px !important;
-         border-top-right-radius: 70px !important;
-    }
-
-    #tbr .carousel-containertbr {
-        flex-direction: column !important;
-    }
-}*/
-
+    
 /*This concerns all containers*/
 .containerone {
     display: flex;
@@ -391,6 +358,109 @@ footer {
     width: 10px;
     height: 10px;
 }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 10;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #40242B;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 150px;
+    }
+
+    .topside h1 {
+        display: none;
+    }
+    
+    .topside img {
+        margin-top: 50px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+        float: right;
+        margin: 10px;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    .mobilemenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        background: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobilemenu.active {
+        display: flex !important;
+    }
+    h2 {
+        transform: rotate(0deg) !important;
+    }
+    .containerone, .containertwo, .containerthree, .containerfour {
+        flex-direction: column !important;
+    }
+
+    .wheel {
+        display: none;
+    }
+
+    .introduction {
+        background-image: none !important;
+        width: 90vw !important; /* Takes up 90% of screen width */
+        max-width: 90% !important; /* Won’t exceed screen width */
+        height: auto; 
+    }
+
+    .carousel-container {
+        flex-direction: column; /* Stack carousels vertically*/
+        margin-top: 20px !important;
+        margin-bottom: 200px;
+        max-width: 450px !important;
+    }
+
+    .containerthree {
+        gap: 15px;
+        text-align: center;
+        border-top-left-radius: 70px !important;
+         border-top-right-radius: 70px !important;
+    }
+
+    .containerthree div {
+        width: 90%; /* Make sure it doesn’t take the full width */
+        margin: auto;
+    }
+
+    .containerthree img {
+        max-width: 100%; /* Make image full width */
+    }
+    
+}
+
 
 
 #aboutpage .information {
