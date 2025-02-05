@@ -359,11 +359,11 @@ footer {
     height: 10px;
 }
 
+/*This what will be displayed once menu clicked*/
 .hamburger {
     display: none;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    align-items: flex-end;
     cursor: pointer;
     gap: 5px;
     z-index: 10;
@@ -379,12 +379,13 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        height: 100px;
+        height: 140px;
         display: flex;
         flex-direction: row;
         justify-content: space-between !important;
         align-items: center !important;
-        margin-left: 0 !important;
+        margin: 0 !important;
+        gap: 0 !important;
     }
 
     .topside h1 {
