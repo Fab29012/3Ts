@@ -397,7 +397,6 @@ footer {
     .profile {
         width: 170px;
         height: 170px;
-        border: 1px solid red;
     }
 
     .wrap {
@@ -428,6 +427,7 @@ footer {
     .mobilemenu.active {
         display: flex !important;
     }
+
     h2 {
         font-size: 25px !important;
         transform: rotate(0deg) !important;
@@ -448,7 +448,6 @@ footer {
     .introduction {
         background-image: none !important;
         width: 375px;
-        border: 1px solid red;
     }
 
     .introduction h4 {
@@ -460,14 +459,14 @@ footer {
         flex-direction: column; /* Stack carousels vertically*/
         margin-top: 20px !important;
         margin-bottom: 200px;
-        max-width: 450px !important;
+        max-width: 350px !important;
     }
 
     .containerthree {
         gap: 15px;
         text-align: center;
         border-top-left-radius: 70px !important;
-         border-top-right-radius: 70px !important;
+        border-top-right-radius: 70px !important;
     }
 
     .containerthree div {
