@@ -382,6 +382,7 @@ footer {
         height: 100px;
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
         align-items: center !important;
     }
 
@@ -407,7 +408,7 @@ footer {
     
     .hamburger {
         display: flex;
-    }
+    } 
 
     .mobilemenu {
         display: none;
@@ -428,9 +429,10 @@ footer {
         font-size: 25px !important;
         transform: rotate(0deg) !important;
     }
+    /*
     .containerone, .containertwo, .containerthree, .containerfour {
         flex-direction: column !important;
-    }
+    }*/
 
     .wheel {
         display: none;
