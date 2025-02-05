@@ -391,10 +391,10 @@ footer {
     }
     
     .topside img {
-        margin: 10px 10px 10px -100px;
+        margin-right: 200px !important;
+        margin-bottom: 40px;
         width: 80px;
         height: 80px;
-
     }
 
     .profile {
@@ -416,7 +416,6 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 40px;
         left: 0;
         width: 90%;
         background: white;
