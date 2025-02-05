@@ -458,24 +458,27 @@ footer {
     .carousel-container {
         flex-direction: column; /* Stack carousels vertically*/
         margin-top: 20px !important;
-        margin-bottom: 200px;
+        margin-bottom: 80px;
         max-width: 350px !important;
     }
 
     .containerthree {
         gap: 15px;
         text-align: center;
-        border-top-left-radius: 70px !important;
-        border-top-right-radius: 70px !important;
+        border-radius: 0%;
     }
 
-    .containerthree div {
-        width: 90%; /* Make sure it doesn’t take the full width */
-        margin: auto;
+    .three h2 {
+        margin-top: -100px;
+        margin-bottom: 100px;
     }
-
     .containerthree img {
         max-width: 100%; /* Make image full width */
+    }
+
+    .description {
+        text-align: center;
+        margin: 0 25px !important;
     }
     
 }
