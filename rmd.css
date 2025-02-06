@@ -171,4 +171,8 @@
     #tbr .carousel-containertbr {
         flex-direction: column;
     }
+
+    #tbr .carouseltbr {
+        width: 370px;
+    }
 }
