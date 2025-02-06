@@ -16,6 +16,8 @@
     border-radius: 5px;
 }
 
+/*media query for homepage*/
+
 @media (max-width: 780px) {
     
     header {
@@ -143,12 +145,26 @@
     .tea2 {
         margin-top: -40px;
     }
-    
+
     .tea2 p {
         padding-left: 20px;
         padding-right: 20px;
     }
     footer {
         margin-top: 100px;
+    }
+}
+
+/* media query for about me page*/
+
+@media (max-width: 780px) {
+
+    #aboutpage .information div {
+        width: 360px;
+        height: auto;
+    }
+
+    #aboutpage .information img {
+        margin-left: 150px;
     }
 }
