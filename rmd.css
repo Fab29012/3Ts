@@ -167,4 +167,8 @@
     #aboutpage .information img {
         margin-left: 120px;
     }
+
+    #tbr .carousel-containertbr {
+        flex-direction: column;
+    }
 }
