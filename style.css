@@ -488,7 +488,7 @@ footer {
     }
     
     .containerfour :first-child ~ div {
-        width: 350px;
+        width: 300px;
         margin-bottom: 40px !important;
     }
 
