@@ -17,12 +17,33 @@
 }
 
 @media (max-width: 780px) {
+    
     header {
         height: 100px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center !important;
+    }
+    
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+    } 
+    
+    .mobilemenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 90%;
+        background: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .mobilemenu.active {
+        display: flex !important;
     }
 
     .topside h1 {
@@ -40,61 +61,42 @@
         width: 170px;
         height: 170px;
     }
+    
+    .containertwo, .containerthree, .containerfour {
+        flex-direction: column !important;
+    }
+
+    .containerone p {
+        padding: 0 15px !important;
+    }
+    
+    .containerone {
+        margin-top: 40px;
+        display: block !important;
+    }
+    
+    .introduction {
+        background-image: none !important;
+        width: 375px;
+    }
+    
+    .introduction h4 {
+        font-size: 18px;
+        margin-bottom: -10px;
+    }
 
     .wrap {
         float: right !important;
         margin: 10px;
-    }
-    
-    .containerone p {
-        padding: 0 15px !important;
-    }
-
-    .hamburger {
-        display: flex;
-        margin-right: 20px;
-    } 
-
-    .mobilemenu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        left: 0;
-        width: 90%;
-        background: white;
-        text-align: center;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .mobilemenu.active {
-        display: flex !important;
     }
 
     h2 {
         font-size: 25px !important;
         transform: rotate(0deg) !important;
     }
-    
-    .containerone {
-        display: block !important;
-    }
-
-    .containertwo, .containerthree, .containerfour {
-        flex-direction: column !important;
-    }
 
     .wheel {
         display: none;
-    }
-
-    .introduction {
-        background-image: none !important;
-        width: 375px;
-    }
-
-    .introduction h4 {
-        font-size: 18px;
-        margin-bottom: -10px;
     }
 
     .carousel-container {
@@ -109,32 +111,36 @@
         text-align: center;
         border-radius: 0%;
     }
+    
+    .containerthree img {
+        max-width: 100%; /* Make image full width */
+    }
 
     .three h2 {
         margin-top: -100px;
         margin-bottom: 100px;
     }
-    .containerthree img {
-        max-width: 100%; /* Make image full width */
-    }
-
+    
     .description {
         text-align: center;
         margin: 0 25px !important;
         max-width: 350px !important;
         height: auto;
     }
+    
+    .containerfour :first-child ~ div {
+        width: 410px;
+    }
+    
+    .containerfour p {
+        font-size: 12px;
+    }
 
     .tea {
         margin-top: -100px;
     }
     
-    .containerfour :first-child ~ div {
-        width: 300px;
-        margin-bottom: 40px !important;
-    }
-
-    .containerfour p {
-        font-size: 12px;
+    footer {
+        margin-top: 100px;
     }
 }
