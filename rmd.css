@@ -139,7 +139,15 @@
     .tea {
         margin-top: -100px;
     }
+
+    .tea2 {
+        margin-top: -40px;
+    }
     
+    .tea2 p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     footer {
         margin-top: 100px;
     }
