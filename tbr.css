@@ -82,6 +82,15 @@ nav h3 {
     animation: pulse 4s infinite;
 }
 
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 -5px 10px 0px whitesmoke; /* Subtle shadow on top */
+    }
+    50% {
+        box-shadow: 0 -10px 20px 5px whitesmoke; /* Larger glow at peak */
+    }
+}
+
 .carousel-content {
     display: flex;
     transition: transform 0.5s ease-in-out;
