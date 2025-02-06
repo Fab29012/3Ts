@@ -1,0 +1,49 @@
+.information {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information div {
+    width: 900px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.43);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    z-index: 1;
+    border-radius: 60px;
+    padding: 0 30px 0 30px;
+}
+
+.information img {
+    margin-left: 380px;
+    width: 120px;
+    height: 120px;
+    
+}
+
+.information h5 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.information h6 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+ 
+.information h6:hover {
+    transform: scale(1.25);
+    background-color:#dccdd17a;
+}
+
+footer {
+    margin-top: 40px;
+}

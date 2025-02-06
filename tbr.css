@@ -1,0 +1,65 @@
+.carousel-containertbr {
+    display: flex; /* Align carousels in a row */
+    justify-content: space-evenly; /* Space them evenly */
+    align-items: center; /* Vertically align carousels */
+    gap: 50px; /* Add space between the carousels */
+    margin-top: 60px;
+}
+
+.carouseltbr {
+    width: 420px; /* Adjust carousel width */
+    position: relative; /* Required for arrow positioning */
+    overflow: hidden; /* Hide overflowing slides */
+    border: 2px solid white; /* Optional: Add a border */
+    border-radius: 10px; /* Optional: Rounded corners */
+    animation: pulse 4s infinite;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    transition: opacity 0.5s ease-in-out;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #7A6785;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+button:hover {
+    background-color: #40242B;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.carouseltbr img {
+    margin-top: 20px;
+    margin-left: 114px;
+    width: 200px;
+    height: 350px;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+}
