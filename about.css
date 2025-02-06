@@ -1,3 +1,70 @@
+/*styles to be applied to the whole website*/
+body {
+    background-color: #DCCDD1;
+    margin: 0;
+    padding: 0;
+    /*position: relative;
+    height: auto;*/
+}
+h1, h2, h3 {
+    font-family: "Fondamento", cursive;
+}
+h4, h5, h6, p {
+    font-family: "Solway", serif;
+}
+
+/*Styles for the header*/
+header {
+    background-color: white;
+    width: 100%;
+    height: 200px; 
+}
+
+.topside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: -140px;
+    
+}
+
+.topside h1 {
+    font-size: 50px;
+    border-bottom: 1.5px solid black;
+}
+
+.topside img {
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+    
+}
+
+.mobilemenu {
+    gap: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    z-index: 2;
+    margin-top: -20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav h3 {
+    font-weight: normal;
+    margin: 0; 
+    padding: 0; 
+}
+
 .information {
     display: flex; 
     flex-direction: column;
@@ -45,5 +112,12 @@
 }
 
 footer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;  
     margin-top: 40px;
 }
